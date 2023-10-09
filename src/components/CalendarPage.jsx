@@ -33,7 +33,7 @@ const CalendarPage = () => {
         <Calendar
           range
           multiple={true}
-          className="bg-teal-300 shadow-3xl rounded-lg "
+          className=" shadow-3xl rounded-lg bg-white"
           value={value}
           onChange={setValue}
           format="YYYY/MM/DD"
@@ -43,7 +43,7 @@ const CalendarPage = () => {
           ]}
           mapDays={({ date, isSameDate,selectedDate }) => {
             let props = {};
-            props.className = "rounded-[3px]  text-white";
+            props.className = "rounded-[3px]  text-black";
 
             if (date.weekDay.index === 6) props.className = "text-orange-800";
 
